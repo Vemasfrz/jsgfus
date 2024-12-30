@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            color: #333;
+        }
+
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 1rem 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #005f73;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #005f73;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #94d2bd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+            <img src="img/kyoka.jpg" alt="My Photo">
+            <p>Hi! My name is [Your Name], a web developer with a passion for creating beautiful and functional websites. With a background in [Your Field/Skills], I specialize in [Your Specialization].</p>
+        </section>
+
+        <section id="projects" class="section projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1: Personal Blog</h3>
+                <p>A fully responsive personal blog built with HTML, CSS, and JavaScript. Features include a dynamic post feed and a user-friendly interface.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: E-Commerce Website</h3>
+                <p>An e-commerce platform that supports user authentication, product listings, and a secure payment gateway.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3: Portfolio Website</h3>
+                <p>A sleek portfolio website designed to showcase my skills, projects, and achievements.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch, feel free to email me at <a href="mailto:your-email@example.com">your-email@example.com</a> or connect with me on <a href="https://www.linkedin.com">LinkedIn</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 [Your Name] | Built with ❤️ and passion</p>
+    </footer>
+</body>
+</html>
